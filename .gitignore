@@ -1,1 +1,5 @@
+#folders
 .venv/
+
+#files
+service_google.json
