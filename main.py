@@ -4,6 +4,8 @@ import pandas
 
 from pygrister.api import GristApi
 
+# API Pygrister - https://pygrister.readthedocs.io/en/latest/api_doc.html#pygrister.api.GristApi.download_excel
+
 # Конфігурація для підключення до гріст
 CONFIG = {
     'GRIST_SELF_MANAGED': 'Y',
@@ -34,7 +36,7 @@ def main():
     print(grist.list_records('T1'))
 
     # не працює поки що
-    id_doc = grist.add_doc("TEST")
+    id_doc = grist.add_doc(name = "Test.xlsx", ws_id=0)
     print(id_doc)
 
 
